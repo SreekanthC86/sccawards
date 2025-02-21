@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SCC Season 3 - Awards Night</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1 id="header1">SCC Season 3 - Awards Night</h1>
+    </header>
+
+    <div id="home-page" class="content">
+        <button onclick="openPlayerProfile()">Player Profile</button>
+        <button onclick="showAwardsPage()">Awards</button>
+    </div>
+
+    <div id="awards-page" class="content hidden">
+        <button onclick="showPlayerOfTheMatch()">Player of the Match</button>
+        <button onclick="showSeriesAwards()">Series Awards</button><br>
+		<button onclick="viewScorecard('NMSD11_Runners')">Runners Up</button>
+		<button onclick="viewScorecard('Leo_Champions')">Champions</button><br><br><br><br>
+        <button onclick="goBackToHome()">Back</button>
+    </div>
+
+    <div id="player-of-the-match-page" class="content hidden">
+        <h2>Player of the Match</h2>
+        <div id="player-links">
+            <!-- List of player links for Player of the Match -->
+			<div>
+				<a href="#" onclick="viewScorecard('M1_Pragadish')">Match 1 - NMSD11 VS VJB</a>
+				<a href="#" onclick="viewScorecard('M2_Sudar')">Match 2 - WARRIORS VS LEO</a>
+			</div>
+			<div>
+				<a href="#" onclick="viewScorecard('M3_Gopi')">Match 3 - NMSD11 VS WARRIORS</a>
+				<a href="#" onclick="viewScorecard('M4_Pravin')">Match 4 - LEO VS VJB</a>
+			</div>
+			<div>
+				<a href="#" onclick="viewScorecard('M5_Arvind')">Match 5 - NMSD11 VS LEO</a>
+				<a href="#" onclick="viewScorecard('M6_Norton')">Match 6 - VJB VS WARRIORS</a>
+			</div>
+			<div>
+				<a href="#" onclick="viewScorecard('M7_Venkat')">Match 7 - LEO VS WARRIORS</a>
+				<a href="#" onclick="viewScorecard('M8_Krishna')">Match 8 - VJB VS NMSD11</a>
+			</div>
+			<div>
+				<a href="#" onclick="viewScorecard('M9_Bala')">Match 9 - WARRIORS VS NMSD11</a>
+				<a href="#" onclick="viewScorecard('M10_Sanjay')">Match 10 - VJB VS LEO</a>
+			</div>
+			<div>
+				<a href="#" onclick="viewScorecard('M11_Allwin')">Match 11 - LEO VS NMSD11</a>
+				<a href="#" onclick="viewScorecard('M12_Sreekanth')">Match 12 - WARRIORS VS VJB</a>
+			</div>
+			<div>
+				<a href="#" onclick="viewScorecard('M13_Abhishek')">Finals - NMSD11 VS LEO</a>
+			</div>
+            <!-- Add all 13 links here -->
+        </div>
+        <button onclick="goBackToAwards()">Back to Awards</button>
+    </div>
+
+    <div id="series-awards-page" class="content hidden">
+        <h2>Series Awards</h2>
+        <div id="award-links">
+            <!-- List of series award links -->
+            <a href="#" onclick="viewAwardImage('BBat')">Best Batsman</a>
+            <a href="#" onclick="viewAwardImage('BBowl')">Best Bowler</a>
+            <a href="#" onclick="viewAwardImage('BField')">Best Fielder</a>
+            <a href="#" onclick="viewAwardImage('MVP')">Most Valuable Player</a>
+        </div>
+        <button onclick="goBackToAwards()">Back to Awards</button>
+    </div>
+
+     <div id="scorecard-images" class="content hidden">        
+    </div>
+	<div id="back-button-MoM" class="content hidden">
+		<button class="back-button" onclick="closeMoMImage()">Back</button>
+	</div>
+
+    <div id="award-images" class="content hidden">
+    </div>
+	<div id="back-button-MoS" class="content hidden">
+		<button class="back-button" onclick="closeMoSImage()">Back</button>
+	</div>
+	<div id="back-button-Win" class="content hidden">
+		<button class="back-button" onclick="closeWinnersImage()">Back</button>
+	</div>
+	<div id="back-button-Run" class="content hidden">
+		<button class="back-button" onclick="closeRunnersImage()">Back</button>
+	</div>
+	
+    <script src="script.js"></script>
+</body>
+</html>

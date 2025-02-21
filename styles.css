@@ -1,0 +1,135 @@
+/* Body and general styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 50;
+    padding: 0;
+    background-image: url('images/awards-night.jpg');  /* Path to your image */
+    background-size: cover;  /* Ensures the image covers the entire page */
+    background-position: center;  /* Centers the image */
+    background-attachment: fixed;  /* Keeps the background fixed when scrolling */
+    color: white;  /* Set text color to white so it contrasts with the background */
+	text-align: center;
+}
+
+header {
+    background-color: rgba(0, 51, 102, 0);  /* Semi-transparent background for header */
+    color: Gold;
+    text-align: center;
+	padding: 20px;
+}
+
+header h1 {
+	font-size: 50px;
+    margin: 20px;
+}
+
+header h2 {
+	font-size: 30px;
+	color: Gold;
+}
+
+/* Buttons */
+button {
+    padding: 20px 40px;
+    margin: 40px;
+	font-size: 20px;
+    background-color: rgba(0, 51, 102, 0);
+    color: Gold;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: black;
+}
+
+/* Hidden Content */
+.hidden {
+    display: none;
+}
+
+/* Modal for images */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    overflow: auto;
+    padding-top: 60px;
+}
+
+.modal-content {
+    background-color: purple;
+    margin: 5% auto;
+    padding: 20px;
+    border-radius: 8px;
+    width: 80%;
+    max-width: 600px;
+}
+
+.close-button {
+    color: purple;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close-button:hover,
+.close-button:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Links and Content Display */
+.content {
+    margin-top: 20px;
+}
+
+#player-links a,
+#award-links a {
+    display: inline-block;
+    margin: 10px;
+    padding: 20px;
+    background-color: black;
+    color: Gold;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+#player-links a:hover,
+#award-links a:hover {
+    background-color: black;
+}
+
+/* Image and Close Button Styles */
+.image-container {
+    position: relative;
+    display: inline-block;
+    margin: 20px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Back Button Position */
+.back-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #003d80;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 16px;
+    cursor: pointer;
+    font-size: 16px;
+}
